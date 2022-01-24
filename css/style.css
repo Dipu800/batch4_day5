@@ -105,3 +105,59 @@
     }
 
 }
+
+.box{
+    position: relative;
+    padding: 5px;
+    border: 0px;
+}
+
+.img-box{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.img-box img{
+    height: 300px;
+    width: 100%;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.img-box img:hover{
+    transform: scale(1.4);
+
+}
+
+.detail{
+    position: absolute;
+    top:5%;
+    right: 5%;
+    bottom: 5%;
+    left: 5%;
+    background-color: rgba(0,0,0,0.7);
+    transform: scale(0);
+    transition: 1s;
+}
+
+.box:hover .detail{
+    transform: scale(1);
+
+
+}
+
+.content{
+    text-align: center;
+    padding: 10px;
+    color:white;
+}
+
+.btn{
+    text-decoration: none;
+    padding:10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
